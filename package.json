@@ -1,0 +1,19 @@
+{
+  "name": "jenkins-pipeline",
+  "version": "1.1.1",
+  "description": "",
+  "scripts": {
+    "dev": "export LOG_TYPE=verbose && ts-node index.ts",
+    "prod": "export LOG_TYPE=verbose && node dist/index.js",
+    "build": "yarn compile:server",
+    "compile:server": "tsc",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "ic-logs": "^2.1.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
