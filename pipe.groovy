@@ -37,7 +37,7 @@ folder("""$pipe_folder""") {
 
 
 
-job("""$folder/init""") {
+job("""$pipe_folder/init""") {
     disabled(Boolean.valueOf("""$env_disable_pipes"""))
   parameters {
     
