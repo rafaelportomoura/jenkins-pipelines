@@ -14,8 +14,6 @@ echo $stage
 def source_nvm = """set +x
 source /root/.nvm/nvm.sh --no-use > /dev/null
 nvm install $node_version > /dev/null
-node -v
-npm i yarn -g
 set -x
 """
 def typescript_build="""yarn install --ignore-engines
@@ -63,6 +61,9 @@ job("""$pipe_folder/init""") {
   steps {
     shell("""
 $init_log
+
+node -v
+
 
 $source_nvm
 
