@@ -12,7 +12,7 @@ def init_log="""echo $tenant
 echo $stage
 """
 def source_nvm = """set +x
-source ~/.nvm/nvm.sh --no-use > /dev/null
+source root/.nvm/nvm.sh --no-use > /dev/null
 nvm install $node_version > /dev/null
 node -v
 npm i yarn -g
