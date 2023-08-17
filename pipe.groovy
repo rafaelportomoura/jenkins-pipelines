@@ -48,7 +48,7 @@ job("""$pipe_folder/init""") {
   scm {
         git {
             remote {
-                url("""$git_url/jenkins-pipeline.git""")
+                url("""$git_url/jenkins-pipelines.git""")
             }
             branch("""$git_branch""")
         }
