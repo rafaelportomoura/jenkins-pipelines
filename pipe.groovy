@@ -1,7 +1,7 @@
 tenant="pessoal"
 stage="teste"
 def node_version = "16"
-def git_url = "https://git-codecommit.us-east-2.amazonaws.com/v1/repos"
+def git_url = "https://github.com/rafaelportomoura"
 def scm_cron = "H/05 * * * *"
 def git_branch = 'origin/master'
 def env_disable_pipes = false
@@ -48,7 +48,7 @@ job("""$folder/init""") {
   scm {
         git {
             remote {
-                url("""$git_url/jenkins-pipeline""")
+                url("""$git_url/jenkins-pipeline.git""")
             }
             branch("""$git_branch""")
         }
